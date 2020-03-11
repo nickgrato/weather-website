@@ -3,7 +3,7 @@ console.log('client side js')
 
 
 const getForcast = (location,error,callback) => {
-  const URL = `http://localhost:3000/weather?address=${location}`
+  const URL = `/weather?address=${location}`
   fetch(URL).then((response)=>{
     response.json().then((data) => {
       console.log('data',data)
